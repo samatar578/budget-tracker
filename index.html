@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header with logo image -->
+    <header class="main-header">
+        <img src="https://cdn-icons-png.flaticon.com/512/2489/2489756.png"
+             alt="Budget Tracker Logo"
+             width="50">
+        <h1>Personal Budget Tracker</h1>
+        <p class="subtitle">Track your income and expenses in one place</p>
+    </header>
+
+    <!-- Collapsible instructions section -->
+    <details class="info-section">
+        <summary>How to use this tracker</summary>
+        <p>Enter an expense using the form below, then click "Add Expense" to save it. Your expenses will appear in the table and your balance will update automatically (JavaScript coming in Week 6!).</p>
+    </details>
+
+    <!-- Expense table section -->
+    <section class="expenses-section">
+        <h2>Your Expenses</h2>
+        <table class="expenses-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Groceries</td>
+                    <td>$45.50</td>
+                    <td>Food</td>
+                    <td>2026-09-01</td>
+                </tr>
+                <tr>
+                    <td>Bus pass</td>
+                    <td>$20.00</td>
+                    <td>Transport</td>
+                    <td>2026-09-03</td>
+                </tr>
+                <tr>
+                    <td>Monthly rent</td>
+                    <td>$800.00</td>
+                    <td>Rent</td>
+                    <td>2026-09-05</td>
+                </tr>
+                <tr>
+                    <td>Cinema tickets</td>
+                    <td>$15.00</td>
+                    <td>Entertainment</td>
+                    <td>2026-09-08</td>
+                </tr>
+                <tr>
+                    <td>Phone data top-up</td>
+                    <td>$10.00</td>
+                    <td>Other</td>
+                    <td>2026-09-10</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Add expense form section -->
+    <section class="add-expense-section">
+        <h2>Add a New Expense</h2>
+        <form id="expense-form">
+            <label for="expense-name">Name:</label>
+            <input type="text" id="expense-name" name="expense-name" placeholder="e.g. Groceries" required>
+
+            <label for="expense-amount">Amount:</label>
+            <input type="number" id="expense-amount" name="expense-amount" placeholder="e.g. 45.50" step="0.01" required>
+
+            <label for="expense-category">Category:</label>
+            <select id="expense-category" name="expense-category" required>
+                <option value="">-- Select a category --</option>
+                <option value="Food">Food</option>
+                <option value="Transport">Transport</option>
+                <option value="Rent">Rent</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="expense-date">Date:</label>
+            <input type="date" id="expense-date" name="expense-date" required>
+
+            <button type="button" id="add-expense-btn">Add Expense</button>
+        </form>
+    </section>
+
+    <!-- Multimedia section: embedded video -->
+    <section class="video-section">
+        <h2>Budgeting Tip of the Week</h2>
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/HQzoZfc3GwQ"
+            title="Budgeting Tips for Beginners"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Personal Budget Tracker</p>
+    </footer>
+
+</body>
+</html>
