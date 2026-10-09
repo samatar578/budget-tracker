@@ -6,22 +6,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap');
 
-/* ---------- Design tokens (CSS variables) ---------- */
 :root {
-    --color-primary: #0d9488;        /* teal */
+    --color-primary: #0d9488;
     --color-primary-dark: #0f766e;
     --color-primary-light: #ccfbf1;
-    --color-accent: #f59e0b;         /* amber */
-    --color-bg: #f1f5f9;             /* soft slate */
+    --color-accent: #f59e0b;
+    --color-bg: #f1f5f9;
     --color-card: #ffffff;
-    --color-text: #1e293b;           /* charcoal */
+    --color-text: #1e293b;
     --color-muted: #64748b;
     --color-border: #e2e8f0;
     --radius: 12px;
     --shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
 }
 
-/* ---------- Global reset & base ---------- */
 * {
     box-sizing: border-box;
 }
@@ -57,7 +55,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* ---------- Header card ---------- */
 .main-header {
     display: flex;
     align-items: center;
@@ -88,7 +85,6 @@ h2 {
     padding: 6px;
 }
 
-/* ---------- Info (details/summary) card ---------- */
 .info-section {
     max-width: 1000px;
     margin: 0 auto 25px;
@@ -118,20 +114,18 @@ h2 {
     color: var(--color-muted);
 }
 
-/* ---------- Section cards (Box Model in action) ---------- */
 .expenses-section,
 .add-expense-section,
 .video-section {
     max-width: 1000px;
-    margin: 0 auto 25px;      /* vertical separation between cards */
-    padding: 30px 35px;       /* inner breathing room */
+    margin: 0 auto 25px;
+    padding: 30px 35px;
     background-color: var(--color-card);
     border: 1px solid var(--color-border);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
 }
 
-/* ---------- Expense table ---------- */
 .expenses-table {
     width: 100%;
     border-collapse: collapse;
@@ -172,7 +166,6 @@ h2 {
     font-weight: 500;
 }
 
-/* ---------- Add Expense form ---------- */
 #expense-form {
     display: flex;
     flex-direction: column;
@@ -234,7 +227,6 @@ h2 {
     transform: translateY(0);
 }
 
-/* ---------- Video section ---------- */
 .video-section iframe {
     display: block;
     margin-top: 15px;
@@ -243,7 +235,6 @@ h2 {
     border: 1px solid var(--color-border);
 }
 
-/* ---------- Footer ---------- */
 .main-footer {
     max-width: 1000px;
     margin: 40px auto 0;
